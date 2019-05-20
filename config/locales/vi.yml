@@ -1,0 +1,26 @@
+vi:
+  language: 'Việt Nam'
+  static_pages:
+    home:
+      title: 'Trang chủ'
+      title_sub: 'Ứng dụng mẫu'
+      content_1: 'Đây là trang chủ của '
+      content_2:  '<a href="https://www.railstutorial.org/">Hướng dẫn Ruby on Rails</a>'
+      content_3: 'là môt bản mẫu ứng dụng.'
+    help:
+      title: 'Trợ giúp'
+      get_book: 'Nhận trợ giúp từ Hướng dẫn Ruby on Rails từ '
+      get_book_link: '<a href="https://www.railstutorial.org/help">mục hướng dẫn Rails</a>.'
+      get_help: 'Để nhận trợ giúp về Ứng dụng mẫu, xem tại'
+      get_help_link: '<a href="https://www.railstutorial.org/book"><em>Hướng dẫn Ruby on Rails</em></a>.'
+    about:
+      title: 'Giới thiệu'
+      book_info: 'Quyển <a href="https://www.railstutorial.org/"><em>Hướng dẫn Ruby on Rails</em></a> là một'
+      book_info_link_1: '<a href="https://www.railstutorial.org/book"> quyển sách</a> và'
+      book_info_link_2: '<a href="http://screencasts.railstutorial.org/"> ảnh chụp</a>'
+      book_info_link_3: 'để dạy phát triển web với <a href="http://rubyonrails.org/">Ruby on Rails</a>.'
+      description: 'Đây là một ứng dụng mẫu để hướng dẫn.'
+    contact:
+      title: 'Liên hệ'
+      contact_info: 'Liên hệ với Hướng dẫn Ruby on Rails về Ứng dụng mẫu tại '
+      contact_info_link: '<a href="https://www.railstutorial.org/contact">trang liên hệ</a>.'

@@ -1,0 +1,11 @@
+<% provide :title, t(".title") %>
+<h1><%= t  ".title_sub" %></h1>
+<p>
+  <%= t ".content_1" %>
+  <%=raw t ".content_2" %>
+  <%=raw t ".content_3" %>
+</p>
+<p>
+  <%= link_to_unless I18n.locale == :en, "English", locale: :en %> |
+  <%= link_to_unless I18n.locale == :vi, "Việt Nam", locale: :vi %>
+</p>
