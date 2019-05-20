@@ -1,0 +1,17 @@
+<footer class="footer">
+  <small>
+    <%= raw t ".content_1" %>
+    <%= raw t ".content_2" %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".news"), href= "http://news.railstutorial.org/" %></li>
+      <li>
+        <%= link_to_unless I18n.locale == :en, t(".en"), locale: :en %> |
+        <%= link_to_unless I18n.locale == :vi, t(".vi"), locale: :vi %>
+      </li>
+    </ul>
+  </nav>
+</footer>

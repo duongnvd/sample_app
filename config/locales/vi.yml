@@ -4,10 +4,10 @@ vi:
   static_pages:
     home:
       title: "Trang chủ"
-      title_sub: "Ứng dụng mẫu"
-      content_1: "Đây là trang chủ của "
-      content_2:  "<a href=\"https://www.railstutorial.org/\">Hướng dẫn Ruby on Rails</a>"
-      content_3: "là môt bản mẫu ứng dụng."
+      welcome: "Chào mừng đến với Ứng dụng Mẫu"
+      content_info: "Đây là trang chủ của cuốn sách "
+      content_link: "<a href=\"https://www.railstutorial.org/\">Hướng dẫn Ruby on Rails</a>, ứng dụng mẫu."
+      sigup: "Đăng ký ngay!"
     help:
       title: "Trợ giúp"
       get_book: "Nhận trợ giúp từ Hướng dẫn Ruby on Rails từ "
@@ -25,3 +25,21 @@ vi:
       title: "Liên hệ"
       contact_info: "Liên hệ với Hướng dẫn Ruby on Rails về Ứng dụng mẫu tại "
       contact_info_link: "<a href=\"https://www.railstutorial.org/contact\">trang liên hệ</a>."
+  layouts:
+    header:
+      logo: "ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+    footer:
+      content_1: "Cuốn <a href=\"https://www.railstutorial.org/\">Hướng dẫn Ruby on Rails </a>"
+      content_2: "được viết bởi <a href=\"http://www.michaelhartl.com/\">Michael Hartl</a>"
+      about: "Giới thiệu"
+      contact: "Liên hệ"
+      news: "Tin tức"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
+  users:
+    new:
+      title: "Đăng ký"
+      des: "Đây sẽ là một trang đăng ký cho người dùng mới."
