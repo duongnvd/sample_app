@@ -1,26 +1,27 @@
 en:
-  language: 'English'
+  lg_title: "Ruby on Rails Tutorial"
+  language: "English"
   static_pages:
     home:
-      title: 'Home'
-      title_sub: 'Sample App'
-      content_1: 'This is the home page for the'
-      content_2:  '<a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>'
-      content_3: ' sample application.'
+      title: "Home"
+      title_sub: "Sample App"
+      content_1: "This is the home page for the"
+      content_2:  "<a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a>"
+      content_3: " sample application."
     help:
-      title: 'Help'
-      get_book: 'Get help on the Ruby on Rails Tutorial at the'
-      get_book_link: '<a href="https://www.railstutorial.org/help">Rails Tutorial help section</a>.'
-      get_help: 'To get help on this sample app, see the'
-      get_help_link: '<a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>book</a>.'
+      title: "Help"
+      get_book: "Get help on the Ruby on Rails Tutorial at the"
+      get_book_link: "<a href=\"https://www.railstutorial.org/help\">Rails Tutorial help section</a>."
+      get_help: "To get help on this sample app, see the"
+      get_help_link: "<a href=\"https://www.railstutorial.org/book\"><em>Ruby on Rails Tutorial</em>book</a>."
     about:
-      title: 'About'
-      book_info: 'The <a href="https://www.railstutorial.org/""><em>Ruby on Rails Tutorial</em></a> is a'
-      book_info_link_1: '<a href="https://www.railstutorial.org/book">book</a> and'
-      book_info_link_2: '<a href="http://screencasts.railstutorial.org/">screencast series</a>'
-      book_info_link_3: 'to teach web development with <a href="http://rubyonrails.org/">Ruby on Rails</a>.'
-      description: 'This is the sample application for the tutorial.'
+      title: "About"
+      book_info: "The <a href=\"https://www.railstutorial.org/\"><em>Ruby on Rails Tutorial</em></a> is a"
+      book_info_link_1: "<a href=\"https://www.railstutorial.org/book\">book</a> and"
+      book_info_link_2: "<a href=\"http://screencasts.railstutorial.org/\">screencast series</a>"
+      book_info_link_3: "to teach web development with <a href=\"http://rubyonrails.org/\">Ruby on Rails</a>."
+      description: "This is the sample application for the tutorial."
     contact:
-      title: 'Contact'
-      contact_info: 'Contact the Ruby on Rails Tutorial about the sample app at the'
-      contact_info_link: '<a href="https://www.railstutorial.org/contact">contact page</a>.'
+      title: "Contact"
+      contact_info: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_info_link: "<a href=\"https://www.railstutorial.org/contact\">contact page</a>."
