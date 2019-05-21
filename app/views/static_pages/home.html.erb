@@ -1,11 +1,11 @@
 <% provide :title, t(".title") %>
-<h1><%= t  ".title_sub" %></h1>
-<p>
-  <%= t ".content_1" %>
-  <%=raw t ".content_2" %>
-  <%=raw t ".content_3" %>
-</p>
-<p>
-  <%= link_to_unless I18n.locale == :en, "English", locale: :en %> |
-  <%= link_to_unless I18n.locale == :vi, "Việt Nam", locale: :vi %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t ".welcome" %></h1>
+  <h2>
+    <%= t ".content_info" %>
+    <%= raw t ".content_link" %>
+  </h2>
+  <%= link_to t(".sigup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"), "http://rubyonrails.org/" %>
