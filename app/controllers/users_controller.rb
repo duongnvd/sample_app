@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
     if @user.save
       log_in @user
-      flash[:success] = t "static_pages.home.welcome"
+      flash[:success] = t "welcome"
       redirect_to @user
     else
       render :new
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   def show
     return if current_user
 
-    flash[:danger] = t "static_pages.home.user_not_found"
+    flash[:danger] = t "user_not_found"
     redirect_to root_path
   end
 
