@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
+      log_in @user
       flash[:success] = t "static_pages.home.welcome"
       redirect_to @user
     else
@@ -22,10 +23,6 @@ class UsersController < ApplicationController
   end
 
   private
-
-  def current_user
-    @user = User.find_by id: params[:id]
-  end
 
   def user_params
     params.require(:user).permit :name, :email, :password,
