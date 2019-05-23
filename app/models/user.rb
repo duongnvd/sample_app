@@ -1,8 +1,6 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
-  attr_accessor :name, :email
-
   validates :name, presence: true,
                    length: {maximum: Settings.validation.name_length}
   validates :email, presence: true,

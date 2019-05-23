@@ -4,7 +4,8 @@ en:
   static_pages:
     home:
       title: "Home"
-      welcome: "Welcome to the Sample App"
+      welcome: "Welcome to the Sample App!"
+      user_not_found: "User not found!"
       content_info: "This is the home page for the"
       content_link: "<a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a> sample application."
       sigup: "Sign up now!"
@@ -39,7 +40,36 @@ en:
       news: "News"
       en: "English"
       vi: "Vietnamese"
+  shared:
+    error_messages:
+      form_error: "The form contains "
+      error: "error"
+  activerecord:
+    attributes:
+      user:
+        name: "Full Name"
+        email: "Email Address"
+        password: "Password"
+        password_confirmation: "Confirmation"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "can't be blank!"
+              too_long: "is too long! (maximum is 50 characters)"
+            email:
+              blank: "can't be blank!"
+              too_long: "is too long! (maximum is 255 characters)"
+              invalid: "is invalid!"
+            password:
+              blank: "can't be blank!"
+              too_short: "is too short! (minimum is 6 characters)"
+            password_confirmation:
+              blank: "can't be blank!"
+              confirmation: "doesn't match Password!"
   users:
     new:
-      title: "Sign up!"
+      title: "Sign up"
       des: "This will be a signup page for new users."
+      btn_submit: "Create my account"
