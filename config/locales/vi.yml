@@ -8,7 +8,7 @@ vi:
       user_not_found: "Không tìm thấy tài khoản!"
       content_info: "Đây là trang chủ của cuốn sách "
       content_link: "<a href=\"https://www.railstutorial.org/\">Hướng dẫn Ruby on Rails</a>, ứng dụng mẫu."
-      sigup: "Đăng ký ngay!"
+      signup: "Đăng ký ngay!"
     help:
       title: "Trợ giúp"
       get_book: "Nhận trợ giúp từ Hướng dẫn Ruby on Rails từ "
@@ -32,6 +32,11 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+      user: "Người dùng"
+      account: "Tài khoản "
+      profile: "Thông tin cá nhân"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
     footer:
       content_1: "Cuốn <a href=\"https://www.railstutorial.org/\">Hướng dẫn Ruby on Rails </a>"
       content_2: "được viết bởi <a href=\"http://www.michaelhartl.com/\">Michael Hartl</a>"
@@ -73,3 +78,13 @@ vi:
       title: "Đăng ký"
       des: "Đây sẽ là một trang đăng ký cho người dùng mới."
       btn_submit: "Tạo tài khoản của tôi"
+    show:
+
+  sessions:
+    new:
+      invalid_user: "Thông tin đăng nhập không chính xác!"
+      title: "Đăng nhập"
+      new_user: "Tạo tài khoản mới?"
+      email: "Địa chỉ thư"
+      password: "Mật khẩu"
+      signup: "Đăng ký ngay!"

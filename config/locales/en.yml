@@ -8,7 +8,7 @@ en:
       user_not_found: "User not found!"
       content_info: "This is the home page for the"
       content_link: "<a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a> sample application."
-      sigup: "Sign up now!"
+      signup: "Sign up now!"
     help:
       title: "Help"
       get_book: "Get help on the Ruby on Rails Tutorial at the"
@@ -32,6 +32,11 @@ en:
       hone: "Home"
       help: "Help"
       login: "Login"
+      user: "Users"
+      account: "Account "
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
     footer:
       content_1: "The <a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a>"
       content_2: "by <a href=\"http://www.michaelhartl.com/\">Michael Hartl</a>"
@@ -73,3 +78,13 @@ en:
       title: "Sign up"
       des: "This will be a signup page for new users."
       btn_submit: "Create my account"
+    show:
+
+  sessions:
+    new:
+      invalid_user: "Invalid email/password combination!"
+      title: "Log in"
+      new_user: "New user?"
+      email: "Email"
+      password: "Password"
+      signup: "Sign up now!"
