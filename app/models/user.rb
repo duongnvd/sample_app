@@ -10,9 +10,12 @@ class User < ApplicationRecord
                     format: {with: VALID_EMAIL_REGEX},
                     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-                       length: {minimum: Settings.validation.passw_minl}
+                       length: {minimum: Settings.validation.passw_minl},
+                       allow_nil: true
 
   before_save :downcase_fields
+
+  scope :normal, ->{where admin: false}
 
   has_secure_password
 
@@ -29,6 +32,10 @@ class User < ApplicationRecord
   def remember
     self.remember_token = User.new_token
     update_attribute :remember_digest, User.digest(remember_token)
+  end
+
+  def current_user? user
+    user == self
   end
 
   class << self

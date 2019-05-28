@@ -2,8 +2,8 @@ vi:
   lg_title: "Hướng dẫn Ruby on Rails"
   language: "Việt Nam"
   invalid_user: "Thông tin đăng nhập không chính xác!"
-  welcome: "Chào mừng đến với Ứng dụng Mẫu!"
-  user_not_found: "Không tìm thấy tài khoản!"
+  require_login: "Vui lòng đăng nhập."
+  require_confirm: "Bạn đã chắc chưa?"
   static_pages:
     home:
       title: "Trang chủ"
@@ -76,13 +76,45 @@ vi:
             password_confirmation:
               blank: "không được để trống!"
               confirmation: "không khớp!"
+  views:
+    pagination:
+      first: "&laquo; Đầu tiên"
+      last: "Cuối cùng &raquo;"
+      previous: "&lsaquo; Trước"
+      next: "Tiếp theo &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Số %{entry_name} không tìm thấy"
+          one: "Đang hiển thị <b>1</b> %{entry_name}"
+          other: "Đang hiển thị <b>all %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Đang hiển thị %{entry_name} <b>%{first} - %{last}</b> of <b>%{total}</b> trong tổng số"
   users:
+    index:
+      title: "Tất cả các người dùng"
+    show:
+      user_not_found: "Không tìm thấy tài khoản!"
     new:
       title: "Đăng ký"
       des: "Đây sẽ là một trang đăng ký cho người dùng mới."
       btn_submit: "Tạo tài khoản của tôi"
-    show:
-
+    create:
+      welcome: "Chào mừng đến với Ứng dụng Mẫu!"
+      failed: "Có lỗi xảy ra! Không thể tạo tài khoản của bạn"
+    edit:
+      title: "Sửa người dùng"
+      button_text: "Lưu thay đổi"
+      title_info: "Cập nhật thông tin cá nhân"
+      change: "Thay đổi"
+    update:
+      success: "Thông tin cá nhân đã được cập nhật!"
+      failed: "Có lỗi xảy ra! Không thể cập nhật tài khoản của bạn"
+    destroy:
+      success: "Người dùng đã được xóa!"
+      failed: "Không thể xóa được"
   sessions:
     new:
       invalid_user: "Thông tin đăng nhập không chính xác!"
