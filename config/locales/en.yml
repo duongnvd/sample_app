@@ -1,6 +1,9 @@
 en:
   lg_title: "Ruby on Rails Tutorial"
   language: "English"
+  invalid_user: "Invalid email/password combination!"
+  welcome: "Welcome to the Sample App!"
+  user_not_found: "User not found!"
   static_pages:
     home:
       title: "Home"
@@ -88,3 +91,4 @@ en:
       email: "Email"
       password: "Password"
       signup: "Sign up now!"
+      remember_me: "Remember me on this computer"

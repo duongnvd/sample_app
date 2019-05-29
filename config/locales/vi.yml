@@ -1,6 +1,9 @@
 vi:
   lg_title: "Hướng dẫn Ruby on Rails"
   language: "Việt Nam"
+  invalid_user: "Thông tin đăng nhập không chính xác!"
+  welcome: "Chào mừng đến với Ứng dụng Mẫu!"
+  user_not_found: "Không tìm thấy tài khoản!"
   static_pages:
     home:
       title: "Trang chủ"
@@ -88,3 +91,4 @@ vi:
       email: "Địa chỉ thư"
       password: "Mật khẩu"
       signup: "Đăng ký ngay!"
+      remember_me: "Nhớ tôi trên máy tính này"
