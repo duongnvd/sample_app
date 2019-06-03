@@ -13,5 +13,6 @@ Rails.application.routes.draw do
       get "(page/:page)", action: :index, on: :collection, as: ""
     end
     resources :users, concerns: :paginatable
+    resources :microposts, only: [:create, :destroy]
   end
 end

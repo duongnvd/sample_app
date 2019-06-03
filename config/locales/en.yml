@@ -4,6 +4,8 @@ en:
   invalid_user: "Invalid email/password combination!"
   require_login: "Please log in."
   require_confirm: "You sure?"
+  error_picture: "should be less than %{size}MB"
+  allow_picture_size: "Maximum file size is %{size}MB. Please choose a smaller file."
   static_pages:
     home:
       title: "Home"
@@ -12,6 +14,7 @@ en:
       content_info: "This is the home page for the"
       content_link: "<a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a> sample application."
       signup: "Sign up now!"
+      feed: "Micropost Feed"
     help:
       title: "Help"
       get_book: "Get help on the Ruby on Rails Tutorial at the"
@@ -52,6 +55,13 @@ en:
     error_messages:
       form_error: "The form contains "
       error: "error"
+    micropost_form:
+      place_holder:
+        new_post: "Compose new micropost..."
+      button_text: "Post"
+    user_info:
+      view_profile: "View my profile"
+      micropost: "micropost"
   activerecord:
     attributes:
       user:
@@ -97,6 +107,7 @@ en:
       title: "All users"
     show:
       user_not_found: "User not found!"
+      micropost: "Microposts "
     new:
       title: "Sign up"
       des: "This will be a signup page for new users."
@@ -115,6 +126,8 @@ en:
     destroy:
       success: "User deleted!"
       failed: "Can't delete"
+    user:
+      delete: "delete"
   sessions:
     new:
       invalid_user: "Invalid email/password combination!"
@@ -124,3 +137,14 @@ en:
       password: "Password"
       signup: "Sign up now!"
       remember_me: "Remember me on this computer"
+  microposts:
+    micropost:
+      post: "Posted "
+      post_time: " ago."
+      delete: "delete"
+    create:
+      success: "Micropost created!"
+      failed: "Create Micropost failed!"
+    destroy:
+      success: "Micropost deleted"
+      failed: "Micropost failed"
