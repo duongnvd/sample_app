@@ -4,3 +4,6 @@ validation:
   name_length: 50
   passw_minl: 6
 gravatar_size: 80
+users:
+  per_page: 10
+  thumb_size: 50

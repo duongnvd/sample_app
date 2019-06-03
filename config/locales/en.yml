@@ -2,8 +2,8 @@ en:
   lg_title: "Ruby on Rails Tutorial"
   language: "English"
   invalid_user: "Invalid email/password combination!"
-  welcome: "Welcome to the Sample App!"
-  user_not_found: "User not found!"
+  require_login: "Please log in."
+  require_confirm: "You sure?"
   static_pages:
     home:
       title: "Home"
@@ -76,13 +76,45 @@ en:
             password_confirmation:
               blank: "can't be blank!"
               confirmation: "doesn't match Password!"
+  views:
+    pagination:
+      first: "&laquo; FIRST"
+      last: "LAST &raquo;"
+      previous: "&lsaquo; PREV"
+      next: "NEXT &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "No %{entry_name} found"
+          one: "Displaying <b>1</b> %{entry_name}"
+          other: "Displaying <b>all %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Displaying %{entry_name} <b>%{first} - %{last}</b> of <b>%{total}</b> in total"
   users:
+    index:
+      title: "All users"
+    show:
+      user_not_found: "User not found!"
     new:
       title: "Sign up"
       des: "This will be a signup page for new users."
       btn_submit: "Create my account"
-    show:
-
+    create:
+      welcome: "Welcome to the Sample App!"
+      failed: "Some error! Can't create your account"
+    edit:
+      title: "Edit user"
+      button_text: "Save changes"
+      title_info: "Update your profile"
+      change: "Change"
+    update:
+      success: "Profile updated!"
+      failed: "Some error! Can't update your account"
+    destroy:
+      success: "User deleted!"
+      failed: "Can't delete"
   sessions:
     new:
       invalid_user: "Invalid email/password combination!"
