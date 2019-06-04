@@ -4,8 +4,11 @@ en:
   invalid_user: "Invalid email/password combination!"
   require_login: "Please log in."
   require_confirm: "You sure?"
+  url_correct_failed: "The path is not correct!"
   error_picture: "should be less than %{size}MB"
   allow_picture_size: "Maximum file size is %{size}MB. Please choose a smaller file."
+  following: "Following"
+  followers: "Followers"
   static_pages:
     home:
       title: "Home"
@@ -62,6 +65,9 @@ en:
     user_info:
       view_profile: "View my profile"
       micropost: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
   activerecord:
     attributes:
       user:
@@ -128,6 +134,13 @@ en:
       failed: "Can't delete"
     user:
       delete: "delete"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_profile: "View profile"
+      microposts: "Microposts:"
   sessions:
     new:
       invalid_user: "Invalid email/password combination!"

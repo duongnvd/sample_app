@@ -12,7 +12,13 @@ Rails.application.routes.draw do
     concern :paginatable do
       get "(page/:page)", action: :index, on: :collection, as: ""
     end
-    resources :users, concerns: :paginatable
+    resources :users, concerns: :paginatable do
+      member do
+        get :following, action: :following, controller: "following"
+        get :followers, action: :followers, controller: "followers"
+      end
+    end
     resources :microposts, only: [:create, :destroy]
+    resources :relationships, only: [:create, :destroy]
   end
 end
