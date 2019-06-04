@@ -17,3 +17,4 @@ microposts:
 feed:
   per_page: 5
 remember_me: 1
+reset_expired: 2

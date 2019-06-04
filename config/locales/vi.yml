@@ -150,6 +150,7 @@ vi:
       email: "Địa chỉ thư"
       password: "Mật khẩu"
       signup: "Đăng ký ngay!"
+      forgot_password: "(Quên mật khẩu?)"
       remember_me: "Nhớ tôi trên máy tính này"
     create:
       not_activate: "Tài khoản chưa được kích hoạt. Kiểm tra trong hộp thư của bạn và nhấn vào đường dẫn kích hoạt."
@@ -168,6 +169,28 @@ vi:
     edit:
       activated: "Tài khoản đã kích hoạt!"
       invalid_link: "Đường dẫn kích hoạt không hợp lệ!"
+  password_resets:
+    new:
+      email: "Địa chỉ thư"
+      title: "Quên mật khẩu"
+      button_text: "Xác nhận gửi"
+    create:
+      send_success: "Email được gửi với hướng dẫn đặt lại mật khẩu"
+      invalid_mail: "Không tìm thấy địa chỉ email"
+    edit:
+      title: "Đặt lại mật khẩu"
+      confirmation: "Xác nhận lại"
+      button_text: "Cập nhật mật khẩu"
+      some_error: "Đường dẫn không hợp lệ."
+      not_found: "Không tìm thấy người dùng!"
+      error: "Đường dẫn không hợp lệ!"
+    update:
+      error: "không được để trống"
+      success: "Mật khẩu đã được đặt lại."
+      expired:  "Thời gian đặt lại mật khẩu đã hết hạn."
+      some_error: "Bạn chưa kích hoạt tài khoản."
+      not_found: "Không tìm thấy người dùng!"
+      error: "Đường dẫn không hợp lệ!"
   user_mailer:
     account_activation:
       acc_activation: "Kích hoạt tài khoản"
@@ -175,3 +198,8 @@ vi:
       hi: "Chào "
       content: "Chào mừng bạn đến với Ứng dụng Mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
       activate: "Kích hoạt"
+    password_reset:
+      reset: "Đặt lại mật khẩu"
+      content: "Để đặt lại mật khẩu hãy nhấp vào đường dẫn bên dưới:"
+      expired: "Đường dẫn này sẽ hết hạn sau 2 giờ nữa."
+      final: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."

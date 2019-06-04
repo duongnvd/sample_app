@@ -18,8 +18,9 @@ Rails.application.routes.draw do
         get :followers, action: :followers, controller: "followers"
       end
     end
-    resources :microposts, only: [:create, :destroy]
-    resources :relationships, only: [:create, :destroy]
+    resources :microposts, only: %i(create destroy)
+    resources :relationships, only: %i(create destroy)
     resources :account_activations, only: :edit
+    resources :password_resets, except: %i(index show destroy)
   end
 end
