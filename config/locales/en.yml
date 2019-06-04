@@ -121,6 +121,7 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       failed: "Some error! Can't create your account"
+      plz_check_mail: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       button_text: "Save changes"
@@ -150,6 +151,8 @@ en:
       password: "Password"
       signup: "Sign up now!"
       remember_me: "Remember me on this computer"
+    create:
+      not_activate: "Account not activated. Check your email for the activation link."
   microposts:
     micropost:
       post: "Posted "
@@ -161,3 +164,14 @@ en:
     destroy:
       success: "Micropost deleted"
       failed: "Micropost failed"
+  account_activations:
+    edit:
+      activated: "Account activated!"
+      invalid_link: "Invalid activation link!"
+  user_mailer:
+    account_activation:
+      acc_activation: "Account activation"
+      title: "Sample App"
+      hi: "Hi "
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"

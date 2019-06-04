@@ -121,6 +121,7 @@ vi:
     create:
       welcome: "Chào mừng đến với Ứng dụng Mẫu!"
       failed: "Có lỗi xảy ra! Không thể tạo tài khoản của bạn"
+      plz_check_mail: "Vui lòng kiểm tra trong hộp thư để có thể kích hoạt tài khoản của bạn."
     edit:
       title: "Sửa người dùng"
       button_text: "Lưu thay đổi"
@@ -150,6 +151,8 @@ vi:
       password: "Mật khẩu"
       signup: "Đăng ký ngay!"
       remember_me: "Nhớ tôi trên máy tính này"
+    create:
+      not_activate: "Tài khoản chưa được kích hoạt. Kiểm tra trong hộp thư của bạn và nhấn vào đường dẫn kích hoạt."
   microposts:
     micropost:
       post: "Đăng "
@@ -161,3 +164,14 @@ vi:
     destroy:
       success: "Micropost đã được xóa"
       failed: "Micropost không thể xóa"
+  account_activations:
+    edit:
+      activated: "Tài khoản đã kích hoạt!"
+      invalid_link: "Đường dẫn kích hoạt không hợp lệ!"
+  user_mailer:
+    account_activation:
+      acc_activation: "Kích hoạt tài khoản"
+      title: "Ứng dụng Mẫu"
+      hi: "Chào "
+      content: "Chào mừng bạn đến với Ứng dụng Mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"

@@ -2,11 +2,16 @@ User.create!(name: "Example User",
              email: "example@railstutorial.org",
              password: "123123",
              password_confirmation: "123123",
-             admin: true)
+             admin: true,
+             activated: true,
+             activated_at: Time.current)
+
 User.create!(name: "Dương Nguyễn",
              email: "duong@gmail.com",
              password: "123123",
-             password_confirmation: "123123")
+             password_confirmation: "123123",
+             activated: true,
+             activated_at: Time.current)
 
 99.times do |n|
   name = Faker::Name.name
@@ -15,7 +20,9 @@ User.create!(name: "Dương Nguyễn",
   User.create!(name: name,
                email: email,
                password: password,
-               password_confirmation: password)
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.current)
 end
 
 users = User.order(:created_at).take(6)
