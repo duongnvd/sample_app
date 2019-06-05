@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.recent_posts
+                       .page(params[:page]).per Settings.microposts.per_page
     return if @current_user
 
     flash[:danger] = t ".user_not_found"
@@ -62,17 +64,8 @@ class UsersController < ApplicationController
       :password_confirmation
   end
 
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "require_login"
-    redirect_to login_url
-  end
-
   def correct_user
     @user = User.find_by id: params[:id]
-    redirect_to root_url unless current_user? @user
   end
 
   def verify_admin!

@@ -4,6 +4,8 @@ vi:
   invalid_user: "Thông tin đăng nhập không chính xác!"
   require_login: "Vui lòng đăng nhập."
   require_confirm: "Bạn đã chắc chưa?"
+  error_picture: "nên nhỏ hơn %{size}MB"
+  allow_picture_size: "Kích thước tệp tối đa là %{size}MB. Vui lòng chọn một tập tin nhỏ hơn."
   static_pages:
     home:
       title: "Trang chủ"
@@ -12,6 +14,7 @@ vi:
       content_info: "Đây là trang chủ của cuốn sách "
       content_link: "<a href=\"https://www.railstutorial.org/\">Hướng dẫn Ruby on Rails</a>, ứng dụng mẫu."
       signup: "Đăng ký ngay!"
+      feed: "Bảng tin Micropost"
     help:
       title: "Trợ giúp"
       get_book: "Nhận trợ giúp từ Hướng dẫn Ruby on Rails từ "
@@ -52,6 +55,13 @@ vi:
     error_messages:
       form_error: "Biểu mẫu này chứa "
       error: "lỗi"
+    micropost_form:
+      place_holder:
+        new_post: "Tạo bài viết mới..."
+      button_text: "Đăng bài"
+    user_info:
+      view_profile: "Xem trang cá nhân"
+      micropost: "bài đăng"
   activerecord:
     attributes:
       user:
@@ -97,6 +107,7 @@ vi:
       title: "Tất cả các người dùng"
     show:
       user_not_found: "Không tìm thấy tài khoản!"
+      micropost: "Bài viết "
     new:
       title: "Đăng ký"
       des: "Đây sẽ là một trang đăng ký cho người dùng mới."
@@ -115,6 +126,8 @@ vi:
     destroy:
       success: "Người dùng đã được xóa!"
       failed: "Không thể xóa được"
+    user:
+      delete: "xóa"
   sessions:
     new:
       invalid_user: "Thông tin đăng nhập không chính xác!"
@@ -124,3 +137,14 @@ vi:
       password: "Mật khẩu"
       signup: "Đăng ký ngay!"
       remember_me: "Nhớ tôi trên máy tính này"
+  microposts:
+    micropost:
+      post: "Đăng "
+      post_time: " trước."
+      delete: "xóa bài viết"
+    create:
+      success: "Micropost được tạo!"
+      failed: "Tạo Micropost không thành công!"
+    destroy:
+      success: "Micropost đã được xóa"
+      failed: "Micropost không thể xóa"

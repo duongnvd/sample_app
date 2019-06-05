@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   attr_accessor :remember_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
                    length: {maximum: Settings.validation.name_length}
   validates :email, presence: true,
@@ -36,6 +38,10 @@ class User < ApplicationRecord
 
   def current_user? user
     user == self
+  end
+
+  def feed
+    Micropost.news_feed id
   end
 
   class << self
