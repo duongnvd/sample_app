@@ -9,7 +9,11 @@ class Micropost < ApplicationRecord
   validate :picture_size
 
   scope :recent_posts, ->{order created_at: :desc}
-  scope :news_feed, ->(id){where("user_id = ?", id)}
+
+  scope :news_feed, (lambda do |id|
+    where(user_id: Relationship.following_ids(id))
+    .or(Micropost.where(user_id: id))
+  end)
 
   private
 

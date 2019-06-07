@@ -4,8 +4,11 @@ vi:
   invalid_user: "Thông tin đăng nhập không chính xác!"
   require_login: "Vui lòng đăng nhập."
   require_confirm: "Bạn đã chắc chưa?"
+  url_correct_failed: "Đường dẫn không chính xác!"
   error_picture: "nên nhỏ hơn %{size}MB"
   allow_picture_size: "Kích thước tệp tối đa là %{size}MB. Vui lòng chọn một tập tin nhỏ hơn."
+  following: "Theo dõi"
+  followers: "Người theo dõi"
   static_pages:
     home:
       title: "Trang chủ"
@@ -62,6 +65,9 @@ vi:
     user_info:
       view_profile: "Xem trang cá nhân"
       micropost: "bài đăng"
+    stats:
+      following: "theo dõi"
+      followers: "người theo dõi"
   activerecord:
     attributes:
       user:
@@ -128,6 +134,13 @@ vi:
       failed: "Không thể xóa được"
     user:
       delete: "xóa"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Bỏ theo dõi"
+    show_follow:
+      view_profile: "Xem thông tin"
+      microposts: "Tổng số bài đăng:"
   sessions:
     new:
       invalid_user: "Thông tin đăng nhập không chính xác!"

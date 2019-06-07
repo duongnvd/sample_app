@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy,
+    :following, :followers]
   before_action :correct_user, only: [:edit, :update]
   before_action :verify_admin!, only: :destroy
   before_action :current_user, on: :show
@@ -66,6 +67,12 @@ class UsersController < ApplicationController
 
   def correct_user
     @user = User.find_by id: params[:id]
+    begin
+      redirect_to root_url unless @user.current_user? current_user
+    rescue StandardError
+      flash[:danger] = t "url_correct_failed"
+      redirect_to root_url
+    end
   end
 
   def verify_admin!
