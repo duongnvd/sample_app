@@ -16,3 +16,4 @@ microposts:
   picture_height: 400
 feed:
   per_page: 5
+remember_me: 1

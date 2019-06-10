@@ -7,7 +7,8 @@ class UsersController < ApplicationController
   before_action :load_user, on: :destroy
 
   def index
-    @users = User.normal.page(params[:page]).per Settings.users.per_page
+    @users = User.activated.normal
+                 .page(params[:page]).per Settings.users.per_page
   end
 
   def show
@@ -16,7 +17,7 @@ class UsersController < ApplicationController
     return if @current_user
 
     flash[:danger] = t ".user_not_found"
-    redirect_to root_path
+    redirect_to root_url && return unless @user.activated?
   end
 
   def new
@@ -27,9 +28,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".plz_check_mail"
+      redirect_to root_url
     else
       flash.now[:danger] = t ".failed"
       render :new
