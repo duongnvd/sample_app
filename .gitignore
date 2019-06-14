@@ -27,6 +27,6 @@
 /public/assets
 .byebug_history
 
-# Ignore master key for decrypting credentials and more.
-/config/master.key
-/config/database.yml
+config/application.yml
+config/settings.local.yml
+public/uploads/
