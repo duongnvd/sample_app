@@ -1,0 +1,8 @@
+
+development:
+  mail_username: nv.duongnv
+  mail_password: Duongnguyen96sendgrid
+production:
+  S3_ACCESS_KEY: AKIAZ5YOJEXWWSCGDTNP
+  S3_SECRET_KEY: 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
+  S3_BUCKET: duongnv
