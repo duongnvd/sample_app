@@ -37,6 +37,7 @@ group :development do
 end
 
 group :production do
+  gem "fog", "1.42"
   gem "pg", "0.20.0"
 end
 
