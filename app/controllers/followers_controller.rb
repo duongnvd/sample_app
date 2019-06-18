@@ -1,7 +1,7 @@
 class FollowersController < ApplicationController
-  before_action :load_user, on: :followers
+  before_action :load_user, only: :index
 
-  def followers
+  def index
     @title = t "followers"
     @users = @user.followers.page params[:page]
     render "users/show_follow"
