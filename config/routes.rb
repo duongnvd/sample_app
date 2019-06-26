@@ -14,8 +14,8 @@ Rails.application.routes.draw do
     end
     resources :users, concerns: :paginatable do
       member do
-        get :following, action: :following, controller: "following"
-        get :followers, action: :followers, controller: "followers"
+        resources :following, only: :index
+        resources :followers, only: :index
       end
     end
     resources :microposts, only: %i(create destroy)
